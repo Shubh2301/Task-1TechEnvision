@@ -319,7 +319,8 @@
     .b-heading img {
         border-radius: 12px;
         margin-top: 10px;
-        /* padding: 10px; */
+        max-width: 100%;
+        height: auto;
     }
 
     .b-heading .top {
@@ -1033,9 +1034,9 @@
         .section2 {
             display: flex;
             gap: 1rem;
-            flex-direction: column;
-            background-color: red;
+            justify-content: center;
             width: 100%;
+            padding: 0;
         }
 
         .section2 .box1 {
@@ -1048,10 +1049,8 @@
         }
 
         .section2 .heading {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            align-self: center;
+
         }
 
         .section2 .heading h1 {
@@ -1065,30 +1064,32 @@
         .b-heading {
             display: flex;
             align-items: center;
+            width: 100%;
             flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
         }
 
         .b-heading img {
             margin-top: 5px;
-
         }
 
         .b-heading .top {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .top .tags {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             gap: .5rem;
         }
 
         .top .tags h1 {
             font-size: 1.5rem;
+            white-space: nowrap;
         }
 
         .top .tags .tag {
